@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search Array Element</title>
+</head>
+<body>
+    <script>
+        //Linear Search: Search one by one
+        let data = [9, 45, 50, 56, 89, 2, 34];
+        let searchEle = 2;
+
+        let index = undefined;
+        for (let i = 0; i < data.length; i++) {
+            if (data[i] === searchEle) {
+                index = i;
+                break;
+            }
+        }
+
+        console.log(index);
+    </script>
+</body>
+</html>
