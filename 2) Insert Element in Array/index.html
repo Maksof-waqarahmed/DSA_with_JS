@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Traversing</title>
+</head>
+
+<body>
+
+
+    <script>
+        let data = [9, 45, 56, 89, 2, 34];
+        let insertEl = 50; position = 3;
+        //1st solution
+        //    for(let i = data.length - 1; i >= 0; i--){
+        //         if(i >= position){
+        //             data[i + 1] = data[i];
+        //             if(i === position){
+        //                 data[i] = insertEl;
+        //             }
+        //         }
+        //    }
+
+        // for(let i = position; i < data.length; i++){
+        //             data[i + 1] = data[i];
+        //             if(i === position){
+        //                 data[i] = insertEl;
+        //             }
+        //    }
+
+        //2st solution
+        // for (let i = data.length - 1; i >= position; i--) {
+        //     data[i + 1] = data[i];
+        //     if (i === position) {
+        //         data[i] = insertEl;
+        //     }
+        // }
+        console.log(data);
+    </script>
+</body>
+
+</html>
