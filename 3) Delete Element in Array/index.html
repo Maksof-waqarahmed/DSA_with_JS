@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Delete Array Element</title>
+</head>
+
+<body>
+    <script>
+        let data = [9, 45, 50, 56, 89, 2, 34];
+        let pos = 2;
+
+        //    for(let i = 0; i < data.length; i++){
+        //        if(i >= pos){
+        //             data[i] = data[i + 1];
+        //             if(i === data.length - 1) data.length = data.length -1 ;
+        //        }
+        //    }
+
+        for (let i = pos; i < data.length; i++) {
+            if (i >= pos) data[i] = data[i + 1];
+            if (i === data.length - 1) data.length = data.length - 1;
+        }
+
+        console.log(data);
+    </script>
+</body>
+
+</html>
